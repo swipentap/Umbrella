@@ -9,8 +9,6 @@ chartsRepo: https://swipentap.github.io/charts
 # swipentap charts (auto-updated by release workflow)
 githubRunnerChartRevision: "1.0.2-272"
 tlsSecretChartRevision: "1.0.0-272"
-eclipseCheChartRevision: "1.0.0-272"
-eclipseCheOperatorChartRevision: "1.0.0-241"
 keycloakOperatorChartRevision: "1.0.0-272"
 operatorhubCatalogChartRevision: "1.0.0-272"
 sinsChartRevision: "1.0.93-272"
@@ -76,9 +74,6 @@ freeipa:
   ingressTlsSecret: tls-dev-net-wildcard
   adminPassword: "changeme"
   ldapServiceUserPassword: "changeme"
-
-# eclipse-che: Keycloak client secret per env (set in envaapps overlay)
-eclipseCheOAuthSecret: ""
 
 # Per-environment TLS wildcard certs (raw PEM). Template selects based on global.env and b64-encodes.
 # Override: set tlsCrt/tlsKey (raw PEM) to force a specific cert regardless of env.
