@@ -45,8 +45,6 @@ For completeness — these are **chart** sources, not container image registries
 - https://groundhog2k.github.io/helm-charts/
 - https://mrnim94.github.io/redisinsight/
 - https://github.com/devfile/devworkspace-operator
-- https://eclipse-che.github.io/che-operator/charts (eclipse-che dependency)
-
 ---
 
 ## Summary: container image registries to consider for mirroring/proxy
