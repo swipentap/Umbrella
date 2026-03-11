@@ -10,7 +10,6 @@ permissions:
   contents: write
   pages: write
   id-token: write
-  actions: write
 
 jobs:
   release:
@@ -37,4 +36,4 @@ jobs:
           skip_existing: true
           mark_as_latest: true
         env:
-          CR_TOKEN: ${{ secrets.ACTIONS_GITHUB_TOKEN }}
+          CR_TOKEN: ${{ secrets.GITHUB_TOKEN }}
