@@ -3,6 +3,22 @@ entries:
   enva-umbrella:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2026-03-11T18:59:01.198134072Z"
+    description: Umbrella chart for enva ArgoCD Applications (cert-manager, certa,
+      devworkspace-operator, eclipse-che, eclipse-che-operator, github-runner, keycloak,
+      mailu, ollama, postgresql, rancher, sins, tls-secret) plus traefik Service
+    digest: 3119d02dabecc2a99fca65c45a0e35a29b762dd995a13f4cc928c296b8ac2541
+    keywords:
+    - argocd
+    - applications
+    - enva
+    name: enva-umbrella
+    type: application
+    urls:
+    - https://github.com/swipentap/Umbrella/releases/download/enva-umbrella-1.0.0-270/enva-umbrella-1.0.0-270.tgz
+    version: 1.0.0-270
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2026-03-11T17:27:39.600833802Z"
     description: Umbrella chart for enva ArgoCD Applications (cert-manager, certa,
       devworkspace-operator, eclipse-che, eclipse-che-operator, github-runner, keycloak,
@@ -147,11 +163,11 @@ entries:
     version: 1.0.0-261
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-03-11T15:05:16.052398908Z"
+    created: "2026-03-11T15:05:13.194381709Z"
     description: Umbrella chart for enva ArgoCD Applications (cert-manager, certa,
       devworkspace-operator, eclipse-che, eclipse-che-operator, github-runner, keycloak,
       mailu, ollama, postgresql, rancher, sins, tls-secret) plus traefik Service
-    digest: 37348360b974c743f73b5c74a4913fb7b9b03053326e7c3c97788f03a99df961
+    digest: 62250553808943441ede305d6cd8ed60ad6cdca6ebd62539192aade2493c6d86
     keywords:
     - argocd
     - applications
@@ -163,11 +179,11 @@ entries:
     version: 1.0.0-260
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-03-11T15:05:13.194381709Z"
+    created: "2026-03-11T15:05:16.052398908Z"
     description: Umbrella chart for enva ArgoCD Applications (cert-manager, certa,
       devworkspace-operator, eclipse-che, eclipse-che-operator, github-runner, keycloak,
       mailu, ollama, postgresql, rancher, sins, tls-secret) plus traefik Service
-    digest: 62250553808943441ede305d6cd8ed60ad6cdca6ebd62539192aade2493c6d86
+    digest: 37348360b974c743f73b5c74a4913fb7b9b03053326e7c3c97788f03a99df961
     keywords:
     - argocd
     - applications
@@ -241,4 +257,4 @@ entries:
     urls:
     - https://github.com/swipentap/Umbrella/releases/download/enva-umbrella-1.0.0-1/enva-umbrella-1.0.0-1.tgz
     version: 1.0.0-1
-generated: "2026-03-11T17:27:39.601005012Z"
+generated: "2026-03-11T18:59:01.198339617Z"
