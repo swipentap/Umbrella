@@ -3,11 +3,27 @@ entries:
   enva-umbrella:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-03-11T21:47:43.1166843Z"
+    created: "2026-03-11T22:30:52.983947532Z"
+    description: Umbrella chart for enva ArgoCD Applications (cert-manager, certa,
+      devworkspace-operator, github-runner, keycloak, mailu, ollama, postgresql, rancher,
+      sins, tls-secret) plus traefik Service
+    digest: e3366a16bb62ca5b71b9cc1e206e107e4625fc0128f6f7eb64fe1ea174c19d61
+    keywords:
+    - argocd
+    - applications
+    - enva
+    name: enva-umbrella
+    type: application
+    urls:
+    - https://github.com/swipentap/Umbrella/releases/download/enva-umbrella-1.0.0-274/enva-umbrella-1.0.0-274.tgz
+    version: 1.0.0-274
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2026-03-11T21:42:45.763762578Z"
     description: Umbrella chart for enva ArgoCD Applications (cert-manager, certa,
       devworkspace-operator, eclipse-che, eclipse-che-operator, github-runner, keycloak,
       mailu, ollama, postgresql, rancher, sins, tls-secret) plus traefik Service
-    digest: 6a22f1803293314174284443d473ba177272d971353dae8365ba779d18cfe309
+    digest: 73cedd4278282fdc397c4312f997ad619e43e5d1481a41767b6999f931be846a
     keywords:
     - argocd
     - applications
@@ -19,11 +35,11 @@ entries:
     version: 1.0.0-273
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-03-11T21:42:45.763762578Z"
+    created: "2026-03-11T21:47:43.1166843Z"
     description: Umbrella chart for enva ArgoCD Applications (cert-manager, certa,
       devworkspace-operator, eclipse-che, eclipse-che-operator, github-runner, keycloak,
       mailu, ollama, postgresql, rancher, sins, tls-secret) plus traefik Service
-    digest: 73cedd4278282fdc397c4312f997ad619e43e5d1481a41767b6999f931be846a
+    digest: 6a22f1803293314174284443d473ba177272d971353dae8365ba779d18cfe309
     keywords:
     - argocd
     - applications
@@ -353,4 +369,4 @@ entries:
     urls:
     - https://github.com/swipentap/Umbrella/releases/download/enva-umbrella-1.0.0-1/enva-umbrella-1.0.0-1.tgz
     version: 1.0.0-1
-generated: "2026-03-11T21:47:43.116921634Z"
+generated: "2026-03-11T22:30:52.984192741Z"
