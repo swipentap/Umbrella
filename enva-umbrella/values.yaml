@@ -7,17 +7,17 @@ global:
 # charts repo (same as root-apps) for Helm chart revisions
 chartsRepo: https://swipentap.github.io/charts
 # swipentap charts (auto-updated by release workflow)
-githubRunnerChartRevision: "1.0.2-272"
-tlsSecretChartRevision: "1.0.0-272"
-keycloakOperatorChartRevision: "1.0.0-272"
-operatorhubCatalogChartRevision: "1.0.0-272"
-sinsChartRevision: "1.0.93-272"
-certaChartRevision: "1.0.5-272"
-ollamaChartRevision: "0.1.6-272"
-postgresqlChartRevision: "1.0.0-272"
-mailuChartRevision: "2.6.7-272"
+githubRunnerChartRevision: "1.0.2-273"
+tlsSecretChartRevision: "1.0.0-273"
+keycloakOperatorChartRevision: "1.0.0-273"
+operatorhubCatalogChartRevision: "1.0.0-273"
+sinsChartRevision: "1.0.93-273"
+certaChartRevision: "1.0.5-273"
+ollamaChartRevision: "0.1.6-273"
+postgresqlChartRevision: "1.0.0-273"
+mailuChartRevision: "2.6.7-273"
 sonarqubeChartRevision: "2026.2.0-174"
-freeipaChartRevision: "1.0.8-272"
+freeipaChartRevision: "1.0.8-273"
 # external charts (manual updates)
 langflowChartRevision: "0.1.0"
 redisBitnamiChartRevision: "25.3.0"
@@ -29,7 +29,7 @@ devworkspaceOperatorRevision: "v0.39.0"
 externalSecretsChartRevision: "0.10.7"
 vaultSecretsChartRevision: "0.1.0"
 harborChartRevision: "1.18.2"
-harborRbacChartRevision: "0.1.0-272"
+harborRbacChartRevision: "0.1.0-273"
 giteaChartRevision: "12.5.0"
 
 # vault: connection settings for ESO ClusterSecretStore (central Vault at 10.11.1.8)
