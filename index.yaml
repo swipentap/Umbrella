@@ -3,11 +3,11 @@ entries:
   enva-umbrella:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-03-11T20:29:21.982964187Z"
+    created: "2026-03-11T21:41:59.215370603Z"
     description: Umbrella chart for enva ArgoCD Applications (cert-manager, certa,
       devworkspace-operator, eclipse-che, eclipse-che-operator, github-runner, keycloak,
       mailu, ollama, postgresql, rancher, sins, tls-secret) plus traefik Service
-    digest: b56701112e173493b562e4865fede2e896110874b498ecfcdef0913d8ef36bf5
+    digest: 26efc9335664aa112b998e6f0d9019b6bfe0f879dbaaa93dcb3fe9a588fad471
     keywords:
     - argocd
     - applications
@@ -24,6 +24,22 @@ entries:
       devworkspace-operator, eclipse-che, eclipse-che-operator, github-runner, keycloak,
       mailu, ollama, postgresql, rancher, sins, tls-secret) plus traefik Service
     digest: 7657f2ea2ebb62bad92dedc2bde086faf1a9179198e7344e464640936c375bb7
+    keywords:
+    - argocd
+    - applications
+    - enva
+    name: enva-umbrella
+    type: application
+    urls:
+    - https://github.com/swipentap/Umbrella/releases/download/enva-umbrella-1.0.0-272/enva-umbrella-1.0.0-272.tgz
+    version: 1.0.0-272
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2026-03-11T20:29:21.982964187Z"
+    description: Umbrella chart for enva ArgoCD Applications (cert-manager, certa,
+      devworkspace-operator, eclipse-che, eclipse-che-operator, github-runner, keycloak,
+      mailu, ollama, postgresql, rancher, sins, tls-secret) plus traefik Service
+    digest: b56701112e173493b562e4865fede2e896110874b498ecfcdef0913d8ef36bf5
     keywords:
     - argocd
     - applications
@@ -305,4 +321,4 @@ entries:
     urls:
     - https://github.com/swipentap/Umbrella/releases/download/enva-umbrella-1.0.0-1/enva-umbrella-1.0.0-1.tgz
     version: 1.0.0-1
-generated: "2026-03-11T20:29:21.983229731Z"
+generated: "2026-03-11T21:41:59.215585353Z"
