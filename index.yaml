@@ -17,4 +17,20 @@ entries:
     urls:
     - https://github.com/swipentap/Umbrella/releases/download/enva-umbrella-1.0.0-1/enva-umbrella-1.0.0-1.tgz
     version: 1.0.0-1
-generated: "2026-03-11T08:25:01.85845609Z"
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2026-03-11T09:02:30.116633808Z"
+    description: Umbrella chart for enva ArgoCD Applications (cert-manager, certa,
+      devworkspace-operator, eclipse-che, eclipse-che-operator, github-runner, keycloak,
+      mailu, ollama, postgresql, rancher, sins, tls-secret) plus traefik Service
+    digest: dd94f3ac0f29296c16c75e6f5b2d543e80c2d7c63daebcede6be0dc4739993ef
+    keywords:
+    - argocd
+    - applications
+    - enva
+    name: enva-umbrella
+    type: application
+    urls:
+    - https://github.com/swipentap/Umbrella/releases/download/enva-umbrella-1.0.0-1/enva-umbrella-1.0.0-1.tgz
+    version: 1.0.0-1
+generated: "2026-03-11T09:02:30.116641686Z"
