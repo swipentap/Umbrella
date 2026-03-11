@@ -1,0 +1,7 @@
+# Chart Releaser Configuration
+owner: swipentap
+git-repo: Umbrella
+charts-repo: https://swipentap.github.io/Umbrella
+package-path: .cr-release-packages
+index-path: .cr-index
+release-name-template: '{{ .Name }}-{{ .Version }}'
