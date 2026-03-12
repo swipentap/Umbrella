@@ -4,6 +4,42 @@ global:
   domain: dev.net
   tlsSecret: tls-dev-net-wildcard
 
+# Each subchart deploys to its own namespace (match Argo CD app destinations)
+tls-secret:
+  namespaceOverride: tls-secret
+certa:
+  namespaceOverride: certa
+ollama:
+  namespaceOverride: ollama
+sonarqube:
+  namespaceOverride: sonarqube
+keycloak-operator:
+  namespaceOverride: keycloak
+operatorhub-catalog:
+  namespaceOverride: operatorhub-catalog
+harbor-rbac:
+  namespaceOverride: harbor-rbac
+vault-secrets:
+  namespaceOverride: vault-secrets
+langflow:
+  namespaceOverride: langflow
+traefik:
+  namespaceOverride: traefik
+cert-manager:
+  namespaceOverride: cert-manager
+rabbitmq:
+  namespaceOverride: rabbitmq
+redis:
+  namespaceOverride: redis
+redisinsight:
+  namespaceOverride: redisinsight
+external-secrets:
+  namespaceOverride: external-secrets
+harbor:
+  namespaceOverride: harbor
+gitea:
+  namespaceOverride: gitea
+
 # charts repo (same as root-apps) for Helm chart revisions
 chartsRepo: https://swipentap.github.io/charts
 # swipentap charts (auto-updated by release workflow)
@@ -38,35 +74,44 @@ vault:
   kubeAuthPath: "kubernetes"
   role: "external-secrets"
 
-# mailu: CoreDNS nodeHosts per env (dev subnet 10.11.4.x)
+# mailu: own namespace + CoreDNS nodeHosts per env (dev subnet 10.11.4.x)
 mailu:
+  namespaceOverride: mailu
+  redis:
+    namespaceOverride: mailu
   nodeHosts: |
     10.11.4.11 k3s-control
     10.11.4.12 k3s-worker-1
     10.11.4.13 k3s-worker-2
     10.11.4.14 k3s-worker-3
 
-# postgresql: pgadmin ingress host per env
+# postgresql: own namespace + pgadmin ingress host per env
 postgresql:
+  namespaceOverride: postgresql
   pgadminHost: pgadmin.dev.net
 
-# sins: haproxy IP per env (dev 10.11.4.17)
+# sins: own namespace + haproxy IP per env (dev 10.11.4.17)
 sins:
+  namespaceOverride: sins
   haproxyIp: "10.11.4.17"
 
-# rancher hostname per env
+# rancher: own namespace + hostname per env
 rancher:
+  namespaceOverride: rancher
   hostname: rancher.dev.net
 
-# github-runner: runner group and labels per env
+# github-runner: actions-runner-system namespace + runner group and labels per env
+github-runner:
+  namespaceOverride: actions-runner-system
 githubRunner:
   group: k3s-dev
   labels:
     - k3s
     - k3s-dev
 
-# freeipa: hostname, realm, domain per env (dev defaults)
+# freeipa: own namespace + hostname, realm, domain per env (dev defaults)
 freeipa:
+  namespaceOverride: freeipa
   hostname: ipa.dev.net
   realm: DEV.NET
   domain: dev.net
