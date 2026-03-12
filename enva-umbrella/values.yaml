@@ -125,7 +125,7 @@ freeipa:
 # TLS secret: namespaces to create the wildcard TLS secret in (no eclipse-che).
 tlsSecretNamespaces:
   - default
-  - argocd
+  - enva
   - certa
   - cattle-system
   - freeipa

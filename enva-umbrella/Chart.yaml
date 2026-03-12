@@ -2,10 +2,9 @@ apiVersion: v2
 name: enva-umbrella
 description: Umbrella chart referencing swipentap and external charts (tls-secret, certa, postgresql, mailu, cert-manager, rancher, rabbitmq, redis, gitea, harbor, external-secrets, etc.)
 type: application
-version: 1.0.0-286
+version: 1.0.0-287
 appVersion: "1.0.0"
 keywords:
-  - argocd
   - enva
 dependencies:
   # cert-manager first so its CRDs are applied before any chart that uses Certificate/Issuer (mailu, github-runner, rancher)
