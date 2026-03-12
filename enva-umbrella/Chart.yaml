@@ -2,7 +2,7 @@ apiVersion: v2
 name: enva-umbrella
 description: Umbrella chart referencing swipentap and external charts (tls-secret, certa, postgresql, mailu, cert-manager, rancher, rabbitmq, redis, gitea, harbor, external-secrets, etc.)
 type: application
-version: 1.0.0-283
+version: 1.0.0-284
 appVersion: "1.0.0"
 keywords:
   - argocd
@@ -14,49 +14,49 @@ dependencies:
     version: "v1.13.3"
   - name: tls-secret
     repository: https://swipentap.github.io/charts
-    version: "1.0.0-283"
+    version: "1.0.0-284"
   - name: certa
     repository: https://swipentap.github.io/charts
-    version: "1.0.5-283"
+    version: "1.0.5-284"
   - name: postgresql
     repository: https://swipentap.github.io/charts
-    version: "1.0.0-283"
+    version: "1.0.0-284"
   - name: mailu
     repository: https://swipentap.github.io/charts
-    version: "2.6.7-283"
+    version: "2.6.7-284"
   - name: sins
     repository: https://swipentap.github.io/charts
-    version: "1.0.93-283"
+    version: "1.0.93-284"
   - name: ollama
     repository: https://swipentap.github.io/charts
-    version: "0.1.6-283"
+    version: "0.1.6-284"
   - name: keycloak-operator
     repository: https://swipentap.github.io/charts
-    version: "1.0.0-283"
+    version: "1.0.0-284"
   - name: github-runner
     repository: https://swipentap.github.io/charts
-    version: "1.0.2-283"
+    version: "1.0.2-284"
   - name: freeipa
     repository: https://swipentap.github.io/charts
-    version: "1.0.8-283"
+    version: "1.0.8-284"
   - name: sonarqube
     repository: https://swipentap.github.io/charts
-    version: "2026.2.0-283"
+    version: "2026.2.0-284"
   - name: operatorhub-catalog
     repository: https://swipentap.github.io/charts
-    version: "1.0.0-283"
+    version: "1.0.0-284"
   - name: harbor-rbac
     repository: https://swipentap.github.io/charts
-    version: "0.1.0-283"
+    version: "0.1.0-284"
   - name: vault-secrets
     repository: https://swipentap.github.io/charts
-    version: "0.1.0-283"
+    version: "0.1.0-284"
   - name: langflow
     repository: https://swipentap.github.io/charts
-    version: "0.1.0-283"
+    version: "0.1.0-284"
   - name: traefik
     repository: https://swipentap.github.io/charts
-    version: "1.0.0-283"
+    version: "1.0.0-284"
   # external charts
   - name: rancher
     repository: https://releases.rancher.com/server-charts/stable
