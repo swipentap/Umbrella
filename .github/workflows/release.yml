@@ -20,6 +20,23 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Add Helm dependency repos
+        run: |
+          helm repo add swipentap https://swipentap.github.io/charts
+          helm repo add jetstack https://charts.jetstack.io
+          helm repo add bitnami https://charts.bitnami.com/bitnami
+          helm repo add rancher-stable https://releases.rancher.com/server-charts/stable
+          helm repo add groundhog2k https://groundhog2k.github.io/helm-charts/
+          helm repo add redisinsight https://mrnim94.github.io/redisinsight/
+          helm repo add external-secrets https://charts.external-secrets.io
+          helm repo add goharbor https://helm.goharbor.io
+          helm repo add gitea https://dl.gitea.com/charts/
+          helm repo update
+
+      - name: Helm dependency update
+        run: helm dependency update enva-umbrella
+        working-directory: .
+
       - name: Helm lint
         run: helm lint enva-umbrella
 
