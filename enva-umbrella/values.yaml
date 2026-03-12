@@ -75,6 +75,25 @@ freeipa:
   adminPassword: "changeme"
   ldapServiceUserPassword: "changeme"
 
+# TLS secret: namespaces to create the wildcard TLS secret in (no eclipse-che).
+tlsSecretNamespaces:
+  - default
+  - argocd
+  - certa
+  - cattle-system
+  - freeipa
+  - gitea
+  - harbor
+  - keycloak
+  - langflow
+  - ollama
+  - pgadmin
+  - postgresql
+  - sins
+  - redis
+  - rabbitmq
+  - sonarqube
+
 # Per-environment TLS wildcard certs (raw PEM). Template selects based on global.env and b64-encodes.
 # Override: set tlsCrt/tlsKey (raw PEM) to force a specific cert regardless of env.
 tlsCrt: ""
