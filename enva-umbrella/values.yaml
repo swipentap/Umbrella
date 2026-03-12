@@ -9,12 +9,41 @@ tls-secret:
   namespaceOverride: tls-secret
 certa:
   namespaceOverride: certa
+  domain: "dev.net"
+  subdomain: "certa"
+  certa:
+    ingress:
+      enabled: true
+      className: traefik
+      tls:
+        - hosts: ["certa.dev.net"]
+          secretName: tls-dev-net-wildcard
 ollama:
   namespaceOverride: ollama
+  webui:
+    ingress:
+      enabled: true
+      className: traefik
+      hosts:
+        - host: ollama.dev.net
+          paths: [{ path: "/", pathType: Prefix }]
+      tls:
+        - hosts: [ollama.dev.net]
+          secretName: tls-dev-net-wildcard
 sonarqube:
   namespaceOverride: sonarqube
+  ingress:
+    enabled: true
+    ingressClassName: traefik
+    hosts:
+      - name: sonar.dev.net
+    tls:
+      - secretName: tls-dev-net-wildcard
+        hosts: [sonar.dev.net]
 keycloak-operator:
   namespaceOverride: keycloak
+  hostname: auth.dev.net
+  tlsSecret: tls-dev-net-wildcard
 operatorhub-catalog:
   namespaceOverride: operatorhub-catalog
 harbor-rbac:
@@ -23,6 +52,14 @@ vault-secrets:
   namespaceOverride: vault-secrets
 langflow:
   namespaceOverride: langflow
+  ingress:
+    enabled: true
+    hosts:
+      - host: langflow.dev.net
+        paths: []
+    tls:
+      - secretName: tls-dev-net-wildcard
+        hosts: [langflow.dev.net]
 traefik:
   namespaceOverride: traefik
 cert-manager:
@@ -31,16 +68,58 @@ cert-manager:
   installCRDs: true
 rabbitmq:
   namespaceOverride: rabbitmq
+  ingress:
+    enabled: true
+    className: traefik
+    hosts:
+      - host: rabbitmq.dev.net
+        paths:
+          - path: /
+            pathType: Prefix
+    tls:
+      - secretName: tls-dev-net-wildcard
+        hosts: [rabbitmq.dev.net]
 redis:
   namespaceOverride: redis
 redisinsight:
   namespaceOverride: redisinsight
+  ingress:
+    enabled: true
+    className: traefik
+    hosts:
+      - host: redis.dev.net
+        paths:
+          - path: /
+            pathType: ImplementationSpecific
+    tls:
+      - secretName: tls-dev-net-wildcard
+        hosts: [redis.dev.net]
 external-secrets:
   namespaceOverride: external-secrets
 harbor:
   namespaceOverride: harbor
+  expose:
+    type: ingress
+    ingress:
+      hosts:
+        core: harbor.dev.net
+    tls:
+      enabled: true
+      certSource: secret
+      secret:
+        secretName: tls-dev-net-wildcard
 gitea:
   namespaceOverride: gitea
+  ingress:
+    enabled: true
+    className: traefik
+    hosts:
+      - host: gitea.dev.net
+        paths:
+          - path: /
+    tls:
+      - secretName: tls-dev-net-wildcard
+        hosts: [gitea.dev.net]
 
 # charts repo (same as root-apps) for Helm chart revisions
 chartsRepo: https://swipentap.github.io/charts
@@ -76,9 +155,14 @@ vault:
   kubeAuthPath: "kubernetes"
   role: "external-secrets"
 
-# mailu: own namespace + CoreDNS nodeHosts per env (dev subnet 10.11.4.x)
+# mailu: own namespace + hostnames for ingress + CoreDNS nodeHosts per env (dev subnet 10.11.4.x)
 mailu:
   namespaceOverride: mailu
+  hostnames:
+    - mail.dev.net
+  ingress:
+    ingressClassName: traefik
+    existingSecret: tls-dev-net-wildcard
   redis:
     namespaceOverride: mailu
   nodeHosts: |
@@ -91,11 +175,25 @@ mailu:
 postgresql:
   namespaceOverride: postgresql
   pgadminHost: pgadmin.dev.net
+  customPgadmin:
+    ingress:
+      host: pgadmin.dev.net
+      tlsSecretName: tls-dev-net-wildcard
 
-# sins: own namespace + haproxy IP per env (dev 10.11.4.17)
+# sins: own namespace + haproxy IP + webui ingress per env (dev 10.11.4.17)
 sins:
   namespaceOverride: sins
   haproxyIp: "10.11.4.17"
+  webui:
+    ingress:
+      enabled: true
+      className: traefik
+      hosts:
+        - host: "ns.dev.net"
+          paths: [{ path: "/", pathType: Prefix }]
+      tls:
+        - hosts: ["ns.dev.net"]
+          secretName: tls-dev-net-wildcard
 
 # rancher: own namespace + hostname per env
 rancher:
