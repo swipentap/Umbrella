@@ -2,7 +2,7 @@ apiVersion: v2
 name: enva-umbrella
 description: Umbrella chart referencing swipentap and external charts (tls-secret, certa, postgresql, mailu, cert-manager, rancher, rabbitmq, redis, gitea, harbor, external-secrets, etc.)
 type: application
-version: 1.0.0-290
+version: 1.0.0-291
 appVersion: "1.0.0"
 keywords:
   - enva
