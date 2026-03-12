@@ -27,6 +27,8 @@ traefik:
   namespaceOverride: traefik
 cert-manager:
   namespaceOverride: cert-manager
+  # Emit CRDs in template output so ArgoCD can apply them (default is false; without this, Certificate/Issuer from other subcharts fail)
+  installCRDs: true
 rabbitmq:
   namespaceOverride: rabbitmq
 redis:
