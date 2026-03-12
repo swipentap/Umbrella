@@ -50,12 +50,6 @@ dependencies:
   - name: langflow
     repository: https://swipentap.github.io/charts
     version: "0.1.0-277"
-  - name: eclipse-che
-    repository: https://swipentap.github.io/charts
-    version: ""
-  - name: eclipse-che-operator
-    repository: https://swipentap.github.io/charts
-    version: "1.0.0-277"
   - name: traefik
     repository: https://swipentap.github.io/charts
     version: "1.0.0-277"
