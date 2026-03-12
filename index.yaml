@@ -88,6 +88,91 @@ entries:
     version: 1.0.0-283
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2026-03-12T13:55:59.544353565Z"
+    dependencies:
+    - name: cert-manager
+      repository: https://charts.jetstack.io
+      version: v1.13.3
+    - name: tls-secret
+      repository: https://swipentap.github.io/charts
+      version: 1.0.0-282
+    - name: certa
+      repository: https://swipentap.github.io/charts
+      version: 1.0.5-282
+    - name: postgresql
+      repository: https://swipentap.github.io/charts
+      version: 1.0.0-282
+    - name: mailu
+      repository: https://swipentap.github.io/charts
+      version: 2.6.7-282
+    - name: sins
+      repository: https://swipentap.github.io/charts
+      version: 1.0.93-282
+    - name: ollama
+      repository: https://swipentap.github.io/charts
+      version: 0.1.6-282
+    - name: keycloak-operator
+      repository: https://swipentap.github.io/charts
+      version: 1.0.0-282
+    - name: github-runner
+      repository: https://swipentap.github.io/charts
+      version: 1.0.2-282
+    - name: freeipa
+      repository: https://swipentap.github.io/charts
+      version: 1.0.8-282
+    - name: sonarqube
+      repository: https://swipentap.github.io/charts
+      version: 2026.2.0-282
+    - name: operatorhub-catalog
+      repository: https://swipentap.github.io/charts
+      version: 1.0.0-282
+    - name: harbor-rbac
+      repository: https://swipentap.github.io/charts
+      version: 0.1.0-282
+    - name: vault-secrets
+      repository: https://swipentap.github.io/charts
+      version: 0.1.0-282
+    - name: langflow
+      repository: https://swipentap.github.io/charts
+      version: 0.1.0-282
+    - name: traefik
+      repository: https://swipentap.github.io/charts
+      version: 1.0.0-282
+    - name: rancher
+      repository: https://releases.rancher.com/server-charts/stable
+      version: 2.13.1
+    - name: rabbitmq
+      repository: https://groundhog2k.github.io/helm-charts/
+      version: 2.2.5
+    - name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 25.3.0
+    - name: redisinsight
+      repository: https://mrnim94.github.io/redisinsight/
+      version: 1.3.1
+    - name: external-secrets
+      repository: https://charts.external-secrets.io
+      version: 0.10.7
+    - name: harbor
+      repository: https://helm.goharbor.io
+      version: 1.18.2
+    - name: gitea
+      repository: https://dl.gitea.com/charts/
+      version: 12.5.0
+    description: Umbrella chart referencing swipentap and external charts (tls-secret,
+      certa, postgresql, mailu, cert-manager, rancher, rabbitmq, redis, gitea, harbor,
+      external-secrets, etc.)
+    digest: 23208194b63483c4b798074b5538beb87b21286b0105a261b3212ebe6e87f779
+    keywords:
+    - argocd
+    - enva
+    name: enva-umbrella
+    type: application
+    urls:
+    - https://github.com/swipentap/Umbrella/releases/download/enva-umbrella-1.0.0-282/enva-umbrella-1.0.0-282.tgz
+    version: 1.0.0-282
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2026-03-12T12:31:41.091356768Z"
     dependencies:
     - name: cert-manager
@@ -598,11 +683,11 @@ entries:
     version: 1.0.0-277
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-03-12T07:00:28.087131906Z"
+    created: "2026-03-12T06:55:27.146137231Z"
     description: Umbrella chart for enva ArgoCD Applications (cert-manager, certa,
       devworkspace-operator, github-runner, keycloak, mailu, ollama, postgresql, rancher,
       sins, tls-secret) plus traefik Service
-    digest: c01b2fa935a81b51350ffd615acfe4b94483793caa65f0b851761820b727f8b0
+    digest: 6170e8f04449b183d6a94750a6dda7e254d5550076405417ee2fe9c0d157e396
     keywords:
     - argocd
     - applications
@@ -614,11 +699,11 @@ entries:
     version: 1.0.0-276
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-03-12T06:55:27.146137231Z"
+    created: "2026-03-12T07:00:28.087131906Z"
     description: Umbrella chart for enva ArgoCD Applications (cert-manager, certa,
       devworkspace-operator, github-runner, keycloak, mailu, ollama, postgresql, rancher,
       sins, tls-secret) plus traefik Service
-    digest: 6170e8f04449b183d6a94750a6dda7e254d5550076405417ee2fe9c0d157e396
+    digest: c01b2fa935a81b51350ffd615acfe4b94483793caa65f0b851761820b727f8b0
     keywords:
     - argocd
     - applications
@@ -710,6 +795,22 @@ entries:
     version: 1.0.0-273
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2026-03-11T20:29:18.403392181Z"
+    description: Umbrella chart for enva ArgoCD Applications (cert-manager, certa,
+      devworkspace-operator, eclipse-che, eclipse-che-operator, github-runner, keycloak,
+      mailu, ollama, postgresql, rancher, sins, tls-secret) plus traefik Service
+    digest: 7657f2ea2ebb62bad92dedc2bde086faf1a9179198e7344e464640936c375bb7
+    keywords:
+    - argocd
+    - applications
+    - enva
+    name: enva-umbrella
+    type: application
+    urls:
+    - https://github.com/swipentap/Umbrella/releases/download/enva-umbrella-1.0.0-272/enva-umbrella-1.0.0-272.tgz
+    version: 1.0.0-272
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2026-03-11T20:29:21.982964187Z"
     description: Umbrella chart for enva ArgoCD Applications (cert-manager, certa,
       devworkspace-operator, eclipse-che, eclipse-che-operator, github-runner, keycloak,
@@ -731,22 +832,6 @@ entries:
       devworkspace-operator, eclipse-che, eclipse-che-operator, github-runner, keycloak,
       mailu, ollama, postgresql, rancher, sins, tls-secret) plus traefik Service
     digest: 26efc9335664aa112b998e6f0d9019b6bfe0f879dbaaa93dcb3fe9a588fad471
-    keywords:
-    - argocd
-    - applications
-    - enva
-    name: enva-umbrella
-    type: application
-    urls:
-    - https://github.com/swipentap/Umbrella/releases/download/enva-umbrella-1.0.0-272/enva-umbrella-1.0.0-272.tgz
-    version: 1.0.0-272
-  - apiVersion: v2
-    appVersion: 1.0.0
-    created: "2026-03-11T20:29:18.403392181Z"
-    description: Umbrella chart for enva ArgoCD Applications (cert-manager, certa,
-      devworkspace-operator, eclipse-che, eclipse-che-operator, github-runner, keycloak,
-      mailu, ollama, postgresql, rancher, sins, tls-secret) plus traefik Service
-    digest: 7657f2ea2ebb62bad92dedc2bde086faf1a9179198e7344e464640936c375bb7
     keywords:
     - argocd
     - applications
@@ -1028,4 +1113,4 @@ entries:
     urls:
     - https://github.com/swipentap/Umbrella/releases/download/enva-umbrella-1.0.0-1/enva-umbrella-1.0.0-1.tgz
     version: 1.0.0-1
-generated: "2026-03-12T13:46:46.104005986Z"
+generated: "2026-03-12T13:55:59.544689112Z"
