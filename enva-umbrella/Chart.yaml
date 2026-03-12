@@ -1,10 +1,86 @@
 apiVersion: v2
 name: enva-umbrella
-description: Umbrella chart for enva ArgoCD Applications (cert-manager, certa, devworkspace-operator, github-runner, keycloak, mailu, ollama, postgresql, rancher, sins, tls-secret) plus traefik Service
+description: Umbrella chart referencing swipentap and external charts (tls-secret, certa, postgresql, mailu, cert-manager, rancher, rabbitmq, redis, gitea, harbor, external-secrets, etc.)
 type: application
 version: 1.0.0-276
 appVersion: "1.0.0"
 keywords:
   - argocd
-  - applications
   - enva
+dependencies:
+  - name: tls-secret
+    repository: https://swipentap.github.io/charts
+    version: "1.0.0-273"
+  - name: certa
+    repository: https://swipentap.github.io/charts
+    version: "1.0.5-273"
+  - name: postgresql
+    repository: https://swipentap.github.io/charts
+    version: "1.0.0-273"
+  - name: mailu
+    repository: https://swipentap.github.io/charts
+    version: "2.6.7-273"
+  - name: sins
+    repository: https://swipentap.github.io/charts
+    version: "1.0.93-273"
+  - name: ollama
+    repository: https://swipentap.github.io/charts
+    version: "0.1.6-273"
+  - name: keycloak-operator
+    repository: https://swipentap.github.io/charts
+    version: "1.0.0-273"
+  - name: github-runner
+    repository: https://swipentap.github.io/charts
+    version: "1.0.2-273"
+  - name: freeipa
+    repository: https://swipentap.github.io/charts
+    version: "1.0.8-273"
+  - name: sonarqube
+    repository: https://swipentap.github.io/charts
+    version: "2026.2.0-174"
+  - name: operatorhub-catalog
+    repository: https://swipentap.github.io/charts
+    version: "1.0.0-273"
+  - name: harbor-rbac
+    repository: https://swipentap.github.io/charts
+    version: "0.1.0-273"
+  - name: vault-secrets
+    repository: https://swipentap.github.io/charts
+    version: "0.1.0"
+  - name: langflow
+    repository: https://swipentap.github.io/charts
+    version: "0.1.0"
+  - name: eclipse-che
+    repository: https://swipentap.github.io/charts
+    version: "1.0.0-273"
+  - name: eclipse-che-operator
+    repository: https://swipentap.github.io/charts
+    version: "1.0.0-273"
+  - name: traefik
+    repository: https://swipentap.github.io/charts
+    version: "1.0.0-273"
+  # external charts
+  - name: cert-manager
+    repository: https://charts.jetstack.io
+    version: "v1.13.3"
+  - name: rancher
+    repository: https://releases.rancher.com/server-charts/stable
+    version: "2.13.1"
+  - name: rabbitmq
+    repository: https://charts.bitnami.com/bitnami
+    version: "2.2.5"
+  - name: redis
+    repository: https://charts.bitnami.com/bitnami
+    version: "25.3.0"
+  - name: redis-insight
+    repository: https://charts.bitnami.com/bitnami
+    version: "1.3.1"
+  - name: external-secrets
+    repository: https://charts.external-secrets.io
+    version: "0.10.7"
+  - name: harbor
+    repository: https://helm.goharbor.io
+    version: "1.18.2"
+  - name: gitea
+    repository: https://dl.gitea.com/charts/
+    version: "12.5.0"
