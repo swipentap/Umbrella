@@ -2,7 +2,7 @@ apiVersion: v2
 name: enva-umbrella
 description: Umbrella chart referencing swipentap and external charts (tls-secret, certa, postgresql, mailu, cert-manager, rancher, rabbitmq, redis, gitea, harbor, external-secrets, etc.)
 type: application
-version: 1.0.0-275
+version: 1.0.0-277
 appVersion: "1.0.0"
 keywords:
   - argocd
@@ -10,55 +10,55 @@ keywords:
 dependencies:
   - name: tls-secret
     repository: https://swipentap.github.io/charts
-    version: "1.0.0-273"
+    version: "1.0.0-277"
   - name: certa
     repository: https://swipentap.github.io/charts
-    version: "1.0.5-273"
+    version: "1.0.5-277"
   - name: postgresql
     repository: https://swipentap.github.io/charts
-    version: "1.0.0-273"
+    version: "1.0.0-277"
   - name: mailu
     repository: https://swipentap.github.io/charts
-    version: "2.6.7-273"
+    version: "2.6.7-277"
   - name: sins
     repository: https://swipentap.github.io/charts
-    version: "1.0.93-273"
+    version: "1.0.93-277"
   - name: ollama
     repository: https://swipentap.github.io/charts
-    version: "0.1.6-273"
+    version: "0.1.6-277"
   - name: keycloak-operator
     repository: https://swipentap.github.io/charts
-    version: "1.0.0-273"
+    version: "1.0.0-277"
   - name: github-runner
     repository: https://swipentap.github.io/charts
-    version: "1.0.2-273"
+    version: "1.0.2-277"
   - name: freeipa
     repository: https://swipentap.github.io/charts
-    version: "1.0.8-273"
+    version: "1.0.8-277"
   - name: sonarqube
     repository: https://swipentap.github.io/charts
-    version: "2026.2.0-174"
+    version: "2026.2.0-277"
   - name: operatorhub-catalog
     repository: https://swipentap.github.io/charts
-    version: "1.0.0-273"
+    version: "1.0.0-277"
   - name: harbor-rbac
     repository: https://swipentap.github.io/charts
-    version: "0.1.0-273"
+    version: "0.1.0-277"
   - name: vault-secrets
     repository: https://swipentap.github.io/charts
-    version: "0.1.0"
+    version: "0.1.0-277"
   - name: langflow
     repository: https://swipentap.github.io/charts
-    version: "0.1.0"
+    version: "0.1.0-277"
   - name: eclipse-che
     repository: https://swipentap.github.io/charts
-    version: "1.0.0-273"
+    version: ""
   - name: eclipse-che-operator
     repository: https://swipentap.github.io/charts
-    version: "1.0.0-273"
+    version: "1.0.0-277"
   - name: traefik
     repository: https://swipentap.github.io/charts
-    version: "1.0.0-273"
+    version: "1.0.0-277"
   # external charts
   - name: cert-manager
     repository: https://charts.jetstack.io
