@@ -171,6 +171,90 @@ entries:
     version: 1.0.0-291
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2026-03-13T09:14:35.013821514Z"
+    dependencies:
+    - name: cert-manager
+      repository: https://charts.jetstack.io
+      version: v1.13.3
+    - name: tls-secret
+      repository: https://swipentap.github.io/charts
+      version: 1.0.0-291
+    - name: certa
+      repository: https://swipentap.github.io/charts
+      version: 1.0.5-291
+    - name: postgresql
+      repository: https://swipentap.github.io/charts
+      version: 1.0.0-291
+    - name: mailu
+      repository: https://swipentap.github.io/charts
+      version: 2.6.7-291
+    - name: sins
+      repository: https://swipentap.github.io/charts
+      version: 1.0.93-291
+    - name: ollama
+      repository: https://swipentap.github.io/charts
+      version: 0.1.6-291
+    - name: keycloak-operator
+      repository: https://swipentap.github.io/charts
+      version: 1.0.0-291
+    - name: github-runner
+      repository: https://swipentap.github.io/charts
+      version: 1.0.2-291
+    - name: freeipa
+      repository: https://swipentap.github.io/charts
+      version: 1.0.8-291
+    - name: sonarqube
+      repository: https://swipentap.github.io/charts
+      version: 2026.2.0-291
+    - name: operatorhub-catalog
+      repository: https://swipentap.github.io/charts
+      version: 1.0.0-291
+    - name: harbor-rbac
+      repository: https://swipentap.github.io/charts
+      version: 0.1.0-291
+    - name: vault-secrets
+      repository: https://swipentap.github.io/charts
+      version: 0.1.0-291
+    - name: langflow
+      repository: https://swipentap.github.io/charts
+      version: 0.1.0-291
+    - name: traefik
+      repository: https://swipentap.github.io/charts
+      version: 1.0.0-291
+    - name: rancher
+      repository: https://releases.rancher.com/server-charts/stable
+      version: 2.13.1
+    - name: rabbitmq
+      repository: https://groundhog2k.github.io/helm-charts/
+      version: 2.2.5
+    - name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 25.3.0
+    - name: redisinsight
+      repository: https://mrnim94.github.io/redisinsight/
+      version: 1.3.1
+    - name: external-secrets
+      repository: https://charts.external-secrets.io
+      version: 0.10.7
+    - name: harbor
+      repository: https://helm.goharbor.io
+      version: 1.18.2
+    - name: gitea
+      repository: https://dl.gitea.com/charts/
+      version: 12.5.0
+    description: Umbrella chart referencing swipentap and external charts (tls-secret,
+      certa, postgresql, mailu, cert-manager, rancher, rabbitmq, redis, gitea, harbor,
+      external-secrets, etc.)
+    digest: 9187030b2924cf009654baa66f7c4d421b0692d6ab27acbe3dd0ff3d49ab8c9e
+    keywords:
+    - enva
+    name: enva-umbrella
+    type: application
+    urls:
+    - https://github.com/swipentap/Umbrella/releases/download/enva-umbrella-1.0.0-291/enva-umbrella-1.0.0-291.tgz
+    version: 1.0.0-291
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2026-03-12T21:46:20.590086211Z"
     dependencies:
     - name: cert-manager
@@ -2799,4 +2883,4 @@ entries:
     urls:
     - https://github.com/swipentap/Umbrella/releases/download/enva-umbrella-1.0.0-1/enva-umbrella-1.0.0-1.tgz
     version: 1.0.0-1
-generated: "2026-03-13T09:12:58.81258195Z"
+generated: "2026-03-13T09:14:35.01406512Z"
