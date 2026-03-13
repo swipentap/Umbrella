@@ -13,49 +13,49 @@ dependencies:
     version: "v1.13.3"
   - name: tls-secret
     repository: https://swipentap.github.io/charts
-    version: "1.0.0-290"
+    version: "1.0.0-291"
   - name: certa
     repository: https://swipentap.github.io/charts
-    version: "1.0.5-290"
+    version: "1.0.5-291"
   - name: postgresql
     repository: https://swipentap.github.io/charts
-    version: "1.0.0-290"
+    version: "1.0.0-291"
   - name: mailu
     repository: https://swipentap.github.io/charts
-    version: "2.6.7-290"
+    version: "2.6.7-291"
   - name: sins
     repository: https://swipentap.github.io/charts
-    version: "1.0.93-290"
+    version: "1.0.93-291"
   - name: ollama
     repository: https://swipentap.github.io/charts
-    version: "0.1.6-290"
+    version: "0.1.6-291"
   - name: keycloak-operator
     repository: https://swipentap.github.io/charts
-    version: "1.0.0-290"
+    version: "1.0.0-291"
   - name: github-runner
     repository: https://swipentap.github.io/charts
-    version: "1.0.2-290"
+    version: "1.0.2-291"
   - name: freeipa
     repository: https://swipentap.github.io/charts
-    version: "1.0.8-290"
+    version: "1.0.8-291"
   - name: sonarqube
     repository: https://swipentap.github.io/charts
-    version: "2026.2.0-290"
+    version: "2026.2.0-291"
   - name: operatorhub-catalog
     repository: https://swipentap.github.io/charts
-    version: "1.0.0-290"
+    version: "1.0.0-291"
   - name: harbor-rbac
     repository: https://swipentap.github.io/charts
-    version: "0.1.0-290"
+    version: "0.1.0-291"
   - name: vault-secrets
     repository: https://swipentap.github.io/charts
-    version: "0.1.0-290"
+    version: "0.1.0-291"
   - name: langflow
     repository: https://swipentap.github.io/charts
-    version: "0.1.0-290"
+    version: "0.1.0-291"
   - name: traefik
     repository: https://swipentap.github.io/charts
-    version: "1.0.0-290"
+    version: "1.0.0-291"
   # external charts
   - name: rancher
     repository: https://releases.rancher.com/server-charts/stable
